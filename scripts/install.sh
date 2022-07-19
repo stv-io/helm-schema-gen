@@ -64,8 +64,10 @@ get_binaries() {
   case "$PLATFORM" in
     darwin/386) BINARIES="helm-schema-gen" ;;
     darwin/amd64) BINARIES="helm-schema-gen" ;;
+    darwin/arm64) BINARIES="helm-schema-gen" ;;
     linux/386) BINARIES="helm-schema-gen" ;;
     linux/amd64) BINARIES="helm-schema-gen" ;;
+    linux/arn64) BINARIES="helm-schema-gen" ;;
     windows/386) BINARIES="helm-schema-gen" ;;
     windows/amd64) BINARIES="helm-schema-gen" ;;
     *)
@@ -112,6 +114,7 @@ adjust_arch() {
   case ${ARCH} in
     386) ARCH=i386 ;;
     amd64) ARCH=x86_64 ;;
+    arm64) ARCH=arm64 ;;
     darwin) ARCH=Darwin ;;
     linux) ARCH=Linux ;;
     windows) ARCH=Windows ;;

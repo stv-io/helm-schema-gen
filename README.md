@@ -27,8 +27,8 @@ binary version
 
 ```
 $ helm plugin install https://github.com/karuppiah7890/helm-schema-gen.git
-karuppiah7890/helm-schema-gen info checking GitHub for tag '0.0.4'
-karuppiah7890/helm-schema-gen info found version: 0.0.4 for 0.0.4/Darwin/x86_64
+karuppiah7890/helm-schema-gen info checking GitHub for tag '0.0.5'
+karuppiah7890/helm-schema-gen info found version: 0.0.5 for 0.0.5/Darwin/x86_64
 karuppiah7890/helm-schema-gen info installed ./bin/helm-schema-gen
 Installed plugin: schema-gen
 ```
