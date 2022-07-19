@@ -20,7 +20,8 @@ jobs:
         name: Check plugin and script version
         uses: mikefarah/yq@3.4.1
         with:
-          cmd: ./scripts/check_version.sh plugin.yaml scripts/install_version.sh ${{ github.ref }}
+          # cmd: ./scripts/check_version.sh plugin.yaml scripts/install_version.sh ${{ github.ref }}
+          cmd: ./scripts/check_version.sh plugin.yaml scripts/install_version.sh 0.0.5
           # cmd: "echo foo"
       -
         name: Set up Go
