@@ -62,8 +62,8 @@ execute() {
 }
 get_binaries() {
   case "$PLATFORM" in
-    darwin/386) BINARIES="helm-schema-gen" ;;
-    darwin/amd64) BINARIES="helm-schema-gen" ;;
+    # darwin/386) BINARIES="helm-schema-gen" ;;
+    # darwin/amd64) BINARIES="helm-schema-gen" ;;
     linux/386) BINARIES="helm-schema-gen" ;;
     linux/amd64) BINARIES="helm-schema-gen" ;;
     linux/arm64) BINARIES="helm-schema-gen" ;;
@@ -102,7 +102,7 @@ adjust_os() {
   case ${OS} in
     386) OS=i386 ;;
     amd64) OS=x86_64 ;;
-    darwin) OS=Darwin ;;
+    # darwin) OS=Darwin ;;
     linux) OS=Linux ;;
     windows) OS=Windows ;;
   esac
@@ -114,20 +114,20 @@ adjust_arch() {
     386) ARCH=i386 ;;
     amd64) ARCH=x86_64 ;;
     arm64) ARCH=arm64 ;;
-    darwin) ARCH=Darwin ;;
+    # darwin) ARCH=Darwin ;;
     linux) ARCH=Linux ;;
     windows) ARCH=Windows ;;
   esac
   true
 }
 
-darwin_universal() {
-  # adjust archive name based on OS
-  case ${OS} in
-    darwin) ARCH=all ;;
-  esac
-  true
-}
+# darwin_universal() {
+#   # adjust archive name based on OS
+#   case ${OS} in
+#     darwin) ARCH=all ;;
+#   esac
+#   true
+# }
 cat /dev/null <<EOF
 ------------------------------------------------------------------------
 https://github.com/client9/shlib - portable posix shell functions
@@ -211,7 +211,7 @@ uname_arch() {
 uname_os_check() {
   os=$(uname_os)
   case "$os" in
-    darwin) return 0 ;;
+    # darwin) return 0 ;;
     dragonfly) return 0 ;;
     freebsd) return 0 ;;
     linux) return 0 ;;
@@ -376,7 +376,7 @@ GITHUB_DOWNLOAD=https://github.com/${OWNER}/${REPO}/releases/download
 
 uname_os_check "$OS"
 uname_arch_check "$ARCH"
-darwin_universal "$OS"
+# darwin_universal "$OS"
 
 parse_args "$@"
 
