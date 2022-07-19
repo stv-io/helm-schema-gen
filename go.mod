@@ -1,4 +1,4 @@
-module github.com/karuppiah7890/helm-schema-gen
+module github.com/stv-io/helm-schema-gen
 
 go 1.13
 

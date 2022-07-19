@@ -26,10 +26,10 @@ The plugin works with both Helm v2 and v3 versions as it's agnostic to the Helm
 binary version
 
 ```
-$ helm plugin install https://github.com/karuppiah7890/helm-schema-gen.git
-karuppiah7890/helm-schema-gen info checking GitHub for tag '0.0.4'
-karuppiah7890/helm-schema-gen info found version: 0.0.4 for 0.0.4/Darwin/x86_64
-karuppiah7890/helm-schema-gen info installed ./bin/helm-schema-gen
+$ helm plugin install https://github.com/stv-io/helm-schema-gen.git
+stv-io/helm-schema-gen info checking GitHub for tag '0.0.5'
+stv-io/helm-schema-gen info found version: 0.0.5 for 0.0.5/Darwin/x86_64
+stv-io/helm-schema-gen info installed ./bin/helm-schema-gen
 Installed plugin: schema-gen
 ```
 
@@ -224,7 +224,7 @@ $ helm schema-gen values.yaml > values.schema.json
 
 Note: I currently don't have the bandwidth to reply to issues, write code and review PRs. For now I recommend forking the repo and making changes and using the fork 😅
 
-Put them all in [GitHub issues](https://github.com/karuppiah7890/helm-schema-gen/issues) 😁
+Put them all in [GitHub issues](https://github.com/stv-io/helm-schema-gen/issues) 😁
 I value every feedback. I really want to make sure that my tools help people and does not
 annoy people. I want my tools to enable people and not hinder them. I'll do my best to help you
 if you face any hindrance because of using my tools! :)
